@@ -1,8 +1,8 @@
 #!/bin/sh
-ssh -t -t appuser@3.144.101.121 <<EOT
- cd ~/node-app
+ssh -t -t appuser@3.144.101.121 <<EOF
+ cd ~/devop-nodejs-app
  git pull
  npm install — production
  pm2 restart all
  exit
-EOT
+EOF
