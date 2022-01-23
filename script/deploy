@@ -1,7 +1,8 @@
 #!/bin/sh
-ssh -t -t appuser@3.144.101.121 <<EOF
+ssh jenkinsuser@3.142.197.82 <<EOF
  cd ~/devop-nodejs-app
  git pull
+ npm --update-env 
  npm install --production
  pm2 restart all
  exit

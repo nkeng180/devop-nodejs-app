@@ -1,4 +1,2 @@
 #!/bin/sh
-./node_modules/.bin/mocha ./test/test.js <<EOF
-exit
-EOF
+./node_modules/.bin/mocha ./test/test.js 
