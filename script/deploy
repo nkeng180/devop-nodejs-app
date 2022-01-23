@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh appuser@3.144.101.121 <<EOT
+ssh -t -t appuser@3.144.101.121 <<EOT
  cd ~/node-app
  git pull
  npm install — production
