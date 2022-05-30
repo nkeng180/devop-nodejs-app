@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh -i ~/.ssh/key.pem -o StrictHostKeyChecking=no jenkinsuser@3.19.229.83<<EOF
+ssh -i ~/.ssh/key.pem -o StrictHostKeyChecking=no ansadmin@172.31.9.188 <<EOF
  cd ~/devop-nodejs-app
  git pull 
  npm install --production
